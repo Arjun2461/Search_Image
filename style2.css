@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;   
+}
+
+
+body{
+    background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0px 60px 0px;
+}
+
+.srch-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+input{
+    width: 30%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    font-size: 1.1rem;
+}
+
+.search-btn{
+   text-align: center;
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 92, 255);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+
+}
+
+
+#searchimg{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 10%;
+}
+
+
+.srch-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px rgb(0,0,0,0.2);
+    overflow: hidden;
+    /* border: 2px solid violet; */
+}
+
+.srch-result img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.srch-result img:hover{
+   opacity: 0.8;
+}
+.srch-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.show-more-btn{
+    background-color: #008cba;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 30px auto;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+    #searchimg{
+        padding: 20px;
+        margin: 0px;
+    }
+    .srch-result{
+        width: 45%;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+
+    .srch-result{
+        width: 100%;
+    }
+    
+}
+
+
+
+@media screen and (min-width:769px) {
+    .background{
+
+        background: transparent;
+        border: 2px solid rgba(2, 2, 2, 0.334);
+        border-radius: 10px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.515);
+        overflow:auto;
+        width: 60%;
+        height: 63vh;
+        margin: 30px auto;
+
+    }
+
+    #searchimg{
+        margin: 20px;
+    }
+
+    .srch-img{
+        margin-bottom: 30px;
+    }
+    
+}
